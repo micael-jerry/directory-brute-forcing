@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const fileToArray = (path, encoding) => {
+function fileToArray(path, encoding) {
 	try {
 		const data = fs.readFileSync(path, encoding);
 		return data.toString().split('\n');
