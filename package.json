@@ -4,6 +4,7 @@
   "description": "This application allows you to test a list of possible paths on a web application and return the existing paths.",
   "main": "index.js",
   "scripts": {
+    "app": "node index.js",
     "prettify": "prettier --write 'src/**/*.js'",
     "check": "eslint src/**/*",
     "test": "echo \"Error: no test specified\" && exit 1"

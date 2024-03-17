@@ -1,9 +1,6 @@
 function getUrlInArgv(argv) {
 	try {
-		for (let i = 0; i < argv.length; i++) {
-			if (argv[i] == "--url")
-				return new URL(argv[i + 1])
-		}
+		return new URL(argv[3]);
 	} catch (error) {
 		console.log(error);
 	}
