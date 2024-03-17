@@ -1,9 +1,9 @@
-const { getUrlInArgv } = require("./src/argTraitement");
+const { getUrlInArgv, getWordListPathInArgv } = require("./src/argTraitement");
 const { testUrl } = require("./src/fetch");
 const { fileToArray } = require("./src/readFile");
 
 const argv = process.argv;
-const dirListPath = `${process.cwd()}/docs/dir_list.txt`;
+const dirListPath = getWordListPathInArgv(argv) ? getWordListPathInArgv(argv) : `${process.cwd()}/docs/dir_list.txt`;
 
 const baseUrl = getUrlInArgv(argv);
 const data = fileToArray(dirListPath, 'utf8');
