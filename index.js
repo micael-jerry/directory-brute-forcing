@@ -16,7 +16,7 @@ async function brutForcing(baseUrl, wordListArray) {
 		[testUrl(baseUrl, array_1), testUrl(baseUrl, array_2)]
 	)
 
-	const validUrl = validUrl_1.concat(validUrl_2);
+	const validUrl = Array.from(new Set(validUrl_1.concat(validUrl_2)));
 	console.log("==================================================================");
 	console.log(validUrl);
 }
