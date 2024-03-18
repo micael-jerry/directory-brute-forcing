@@ -16,9 +16,9 @@ async function fetchURL(url) {
 // function that tests a path list on a basic url by calling the function above
 async function testUrl(url, wordList) {
 	let validUrl = [];
-	for (const element of wordList) {
+	for (const word of wordList) {
 		// join the url base and the path to be tested
-		const u = `${url}${element.indexOf('/') == 0 ? element.slice(1) : element}`;
+		const u = `${url}${word}`;
 		const isValid = await fetchURL(u);
 		// if the path is valid, add to the validUrl array
 		if (isValid) validUrl.push(u);

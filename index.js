@@ -25,7 +25,8 @@ async function brutForcing(baseUrl, wordListArray) {
 	// remove duplicates if there are any in the valid paths
 	const validUrl = Array.from(new Set(validUrl_1.concat(validUrl_2)));
 	console.log("==================================================================");
-	console.log(validUrl);
+	console.log("VALID URL:\n");
+	validUrl.forEach((v, i) => console.log(`${i}. ${v}`))
 }
 
 brutForcing(baseUrl, data);
