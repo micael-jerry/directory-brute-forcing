@@ -32,7 +32,7 @@ npm install
 3. **Run:**
 
 - **cible (`required`):** target url.
-- **wordListPath (`optional`):** path to word list from project root (if you don't set it, the app uses the word list present in ./docs/dir_list.txt)
+- **wordListPath (`optional`):** path to word list from project root (if you don't set it, the app uses the word list present in **`./docs/dir_list.txt`**)
 
 ```bash
 npm run app <cible> <optional>
